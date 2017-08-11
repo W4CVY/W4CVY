@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>CARC - Columbus Amateur Radio Club, Columbus, GA</title>
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<style type="text/css"></style>
+
+	<script type="text/javascript"> 
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-26840234-1']);
+	  _gaq.push(['_setDomainName', 'w4cvy.org']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
+</head>
+
+<link rel="stylesheet" type="text/css" href="default.css" />
+
+<body bgcolor="#ffffff" text="BLACK">
+
+	<!--Begin script updated for Facebook 8/31/16.-->
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	<!--End Facebook script-->
+
+
+	<TABLE ALIGN="center" WIDTH="100%" CELLSPACING="0" CELLPADDING="4" BORDER="1" bgcolor="#ffffff">
+
+		<TR>
+			<TD ALIGN="center" bgcolor="#ffffff"><IMG SRC="redcarclogosmall.gif" WIDTH="150" HEIGHT="90" BORDER="0" ALT="" /><br><br><I>Since 1956</I></TD>
+
+			<TD ALIGN="center" bgcolor="#ffffff"><IMG SRC="carclogotesting1.jpg" WIDTH="600" HEIGHT="132" BORDER="0" ALT="Welcome to the CARC Home Page" /></TD>
+		</TR>
+
+		<TR align="left">
+			<TD bgcolor="#ffffff" WIDTH="150" VALIGN="top" align="center"><script src="xaramenu.js"></script><script menumaker src="w4cvy.js"></script></TD>
+
+			<TD ALIGN="left" colspan="2" VALIGN="top" bgcolor="#ffffff"> <B> <FONT FACE="Verdana,Geneva,Arial,Helvetica,sans-serif" SIZE="-1"COLOR="#004080">
+				<DIV WIDTH="100%" BORDER="0" ALIGN="left" CELLPADDING="2" CELLSPACING="2">
+				Welcome to the Columbus Amateur Radio Club (W4CVY). &nbsp;We are located in Columbus, Georgia. &nbsp;We hope you find these pages interesting and informative, whether you are currently a licensed ham or are considering testing for your license.<BR /><BR />
+
+				On these pages you'll note information on our club and its activities in particular and ham radio in general. &nbsp;Hams are always ready to share their experiences with others and members of C.A.R.C. are no different. &nbsp;If you are looking for information about amateur radio and you don't find it on these pages, don't hesitate to ask us.<BR /><BR />
+
+				We hope to see you at one of our monthly C.A.R.C. meetings, frequent activities, Friday lunches and to hear you on the air!<BR /><BR />
+				</DIV>
+
+				<TABLE WIDTH="100%" BORDER="0" ALIGN="center" CELLPADDING="2" CELLSPACING="2">
+
+					<TR>
+						<TD width="30%" ALIGN="center"><br />
+						Subscribe to our email list by joining our Yahoo! Group.<br>
+						Either click the icon,<br><br>
+						<a href="http://groups.yahoo.com/group/W4CVY">
+						<img src="http://us.i1.yimg.com/us.yimg.com/i/yg/img/i/us/ui/join.gif"
+							 style="border: 0px;"
+							 alt="Click to join the W4CVY Yahoo! Group"/> </a> <br><br>
+						or, send an email to: <a href="mailto:w4cvy-subscribe@yahoogroups.com?subject=Join%20CARC%20email%20list&body=%0A%0A%0A%20%20%20Nothing%20needed%20here.%20Just%20send%20it.%0A%0A%0A%20%20%2073!">w4cvy-subscribe@yahoogroups.com</a> <br> <br></TD>
+						
+						<TD width="40%"><p align="center" style="font-size:18px"> <B><U>Upcoming Events:</B></U><br><br>
+						
+						<font size="+1">
+					
+											
+						<br>						
+				
+						<b>July 13 6:30 PM</b> Monthly Club Meeting, Main Library<br><br>
+						
+						<b>July 15	9:00 AM</b> All-Star node build event.<br>
+						Columbus Makes-It, 710 Front Ave<br><br>
+						
+						<b>August 5 TBA</b> RDF Fox Hunt<br><br>
+						
+						<b>August 10 6:30 PM</b> Monthly Club Meeting, Main Library<br><br>
+						
+						<b>August 12 10:00 AM</b> License Exam Session, North Columbus Library <br><br>
+						
+						<b>August 21</b>  Planned CHS Balloon Launch in TN during eclipse <br><br>
+						
+						<b>Wednesdays: 8:00 PM</b> Chattahoochee Valley Net 146.880 (-) (123.0Hz)<br><br>
+						
+						<b>Fridays: 1:00 PM</b> Lunch at Country's on Broad<br><br>
+						
+						</font>
+						
+						Click the Calendar Button for more!<br><br>
+						</p>
+						<p align="center" style="font-size:22px">Mark your clock, set your calendars to join us for Field Day, June 23-24, 2018.  Don't know what ham radio or Field Day is?  That's even more reason to join us!</strong><br></TD>
+						
+
+									
+						<TD width="30%" ALIGN="center"> <A HREF="http://groups.yahoo.com/group/W4CVY/"></A><A HREF="http://groups.yahoo.com/group/W4CVY/"><IMG SRC="redcarclogosmall.gif" ALT="" WIDTH="150" HEIGHT="90" BORDER="0" align="center" valign="center" /><p>Click to go to the W4CVY Yahoo Group</p></A> </TD>
+
+					</TR>
+					
+					<TR>
+						<TD ALIGN="center"> <a class="twitter-timeline" href="https://twitter.com/W4CVY" data-widget-id="699649931271868417" data-chrome="transparent nofooter">Click here if you don't see our Twitter feed.<br> Adblockers may be suppressing it</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></TD></p>
+						
+						<TD>				
+						
+						<br />
+						
+						
+						<p align="center" style="font-size:22px">Want to learn about ham radio?  Want to learn even more about ham radio, electronics, antennas, RF and more?  The following books are now in circulation from the <A HREF="http://cvlga.org/"> Chattahoochee Valley Libraries</A> here in Columbus!  Check the library web site for availability.</strong><br>
+						<br><br>
+						The ARRL Ham Radio License Manual <br>
+						<font size="-1">(**beginners start with this one)</font><br><br>
+						The ARRL Operating Manual for Radio Amateurs<br>
+						The ARRL Antenna Book<br>
+						The ARRL Extra Class License Manual for Ham Radio<br>
+						The ARRL General Class License Manual for Ham Radio<br>
+						The ARRL Handbook for Radio Communications 2017<br>
+						The ARRL RFI Book<br>
+						The ARRL Satellite Handbook<br>
+						
+						<br>
+						<br>
+						
+						
+						
+						</TD>
+						
+						<TD ALIGN="center"><div class="fb-page" data-href="https://www.facebook.com/W4CVY/" data-tabs="timeline" data-small-header="true" data-height="800" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/W4CVY/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/W4CVY/">Click here if you don't see our Facebook feed. <br>Adblockers may be blocking it.</a></blockquote></div></TD>
+
+					</TR>
+					
+					<TR>
+						<TD height="175" ALIGN="center"><A HREF="http://arrl-ga.org/" TARGET="_blank"><IMG SRC="GA.jpg" BORDER="0" align="center" /></A>
+						Georgia Section
+						ARRL</TD>
+						
+						<TD height="175" ALIGN="left">&nbsp;<B><FONT FACE="Verdana,Geneva,Arial,Helvetica,sans-serif" SIZE="" COLOR="Maroon"">
+							C.A.R.C.<BR />
+							P. O. Box 6336<BR />
+							Columbus, GA 31917-6336<BR />
+						  <a href="mailto:info@w4cvy.org">info@w4cvy.org</a></FONT></B><BR /><BR /></TD>
+						
+						<TD height="175" ALIGN="center">&nbsp;<A HREF="http://www.arrl.org" TARGET="_blank"><IMG SRC="2014_Affiliated_Club_Logo.jpg" ALT="Join the ARRL!" BORDER="0" align="middle" /></A> <BR></TD>
+					</TR>
+
+				</TABLE>
+
+				</FONT>
+				</B></DIV>
+
+				</TD>
+		</TR>
+	</TABLE>
+
+	<BR /> <BR /> <BR />
+
+	<DIV ALIGN="center" bgcolor="#ffffff">
+		<FONT FACE="Verdana,Geneva,Arial,Helvetica,sans-serif" SIZE="-2"COLOR="Gray">
+		Design & Content &copy;2003 - Present, <a href="mailto:info@w4cvy.org">Columbus Amateur Radio Club</a>; rights reserved
+		</FONT>
+	</DIV>
+
+</body>
+<!-- InstanceEnd --></html>

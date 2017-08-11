@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>CARC - Columbus Amateur Radio Club, Columbus, GA</title>
+  
+    <link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="default.css" rel="stylesheet" type="text/css">
+  
+    <!-- Begin Bootstrap includes -->
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!--End Bootstrap includes -->
+  
+    <!-- Begin boostrap dependancies -->
+    <script src="resources/js/jquery-3.2.1.min.js">  </script> 
+    <script src="resources/js/bootstrap.min.js"></script> 
+    <!-- End boostrap dependancies -->
+  
+    <!-- This method will load the header, navbar and footer html from their respective files -->
+    <script>
+      $(document).ready(function(){       
+        $('#headerDiv').load('header.html');
+        $('#navBarDiv').load('navbar.html');  
+        $('#footerDiv').load('footer.html');    
+      });
+    </script>
+
+  </head>
+  <body>
+    <div class="container">
+      <div id="headerDiv"></div>
+      <div id="navBarDiv"></div>
+    </div>
+
+    <div class="container">    
+      <div class="panel panel-default">
+        <div class="panel panel-heading">
+          <h1>CARC Activities</h1>
+        </div>
+        <div class="panel-body">
+          <h1>Meeting Time and Location</h1>
+          <p>The Columbus Amateur Radio Club (C.A.R.C.) meets at 6:30 PM (Eastern) on the 2nd Thursday of each month (except December), usually at the main branch of the Columbus Public Library at 3000 Macon Road.</p>
+          <p>This sometimes changes, so to be sure, tune in to our <a href="ournet.html">Wednesday night net</a> or contact us via email, Facebook or Twitter (all on the home page).</p>
+          <p>For better directions, call in on the 146.88 repeater and someone will help you find the library.</p>
+          <p>We usually have the doors open by 6:00 PM for setup and general fellowship, so plan to arrive a bit before the meeting.</p>
+          <p>And most get-togethers are followed by eating... so, come just a little bit hungry and join us for the eating after the meeting.</p>
+          <p>Our monthly meeting topics generally follow the following broad themes:
+            <ul class="monthlies">
+              <li>January: Operating Events</li>
+              <li>February: Make It!</li>
+              <li>March: Out of This World</li>
+              <li>April: Beyond the Shack</li>
+              <li>May: Field Day</li>
+              <li>June: Let's Get Digital!</li>
+              <li>July: Around the Shack</li>
+              <li>August: Above HF</li>
+              <li>September: Preparedness</li>
+              <li>October: Back to Basics</li>
+              <li>November: More Technical</li>
+              <li>December: Christmas/Holiday Season Social (verify time and location).
+            </ul>
+          </p>
+          <p>The meeting themes are intentionally broad to encourage variety. If you have a specific topic that you would like to present at a meeting, see where it fits best and coordinate with the activities chairperson.</p>
+
+          <p>We host a weekly <a href="ournet.html">2-meter net</a> on Wednesday evening and SkyWarn nets when severe weather threatens the area.</p>
+          <p><em>QSL Cards</em> may be sent to our address on the home page and should include an appropriate sized SASE or $1 for us to provide the envelope and postage.<p>
+          <p><em>Would you like to learn or practice Morse Code?</em>  
+            If you would like to have an Elmer (mentor) to help practice Morse Code, contact:<br>
+             <a href="mailto:k4eor@arrl.net">George</a> at k4eor@arrl.net<br>
+          </p>
+          <p><em>YOU ARE WELCOME TO JOIN US!</em></p>
+        </div>
+      </div>
+    </div>
+    <div id="footerDiv"></div>
+  </body>
+</html>

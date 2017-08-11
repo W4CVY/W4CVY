@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>CARC - Columbus Amateur Radio Club, Columbus, GA</title>
+
+  <link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="default.css" rel="stylesheet" type="text/css">
+
+  <!-- Begin Bootstrap includes -->
+  <link href="resources/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <!--End Bootstrap includes -->
+
+  <!-- Begin boostrap dependancies -->
+  <script src="resources/js/jquery-3.2.1.min.js">  </script> 
+  <script src="resources/js/bootstrap.min.js"></script> 
+  <!-- End boostrap dependancies -->
+
+  <!-- This method will load the header, navbar and footer html from their respective files -->
+  <script>
+  $(document).ready(function(){       
+          $('#headerDiv').load('header.html');
+          $('#navBarDiv').load('navbar.html');  
+          $('#footerDiv').load('footer.html');    
+  });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div id="headerDiv"></div>
+    <div id="navBarDiv"></div>
+  </div>
+  <div class="container">
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h1>Area Nets</h1>
+      </div>
+      <div class="panel-body">
+        <h1>VHF</h1>
+
+        <div class="net">
+          <h2>Chattahoochee Valley Net</h2>
+          <p>Wednesday 8:00 PM ET</p>
+          <p><b>146.880</b> (-) 123.0 Hz Tone</p>
+        </div>
+
+        <div class="net">
+          <h2>Chattahoochee Valley Allstar Linked Repeater and Technical Net</h2>
+          <p>Tuesday 8:00 PM ET</p>
+          <p><b>146.880</b> (-) 123.0 Hz Tone</p>
+          <p><b>441.975</b> (-) 67.0 Hz Tone</p>
+          <p><b>Allstar Node</b> 45310</p>
+          <p><b>Echolink</b> W8JVF-R, WB4ULK-L</p>
+        </div>
+
+        <div class="net">
+          <h2>Southeastern Linked Repeater Net</h2>
+          <p>Wednesday 9:00 PM ET</p>
+          <p><b>145.190</b> (-) 123.0 Hz Tone (if link is up)</p>
+          <p><b>or 441.975</b> (+) 67.0 Hz Tone</p>
+        </div>
+        
+        <div class="net">
+          <h2>Metropolitan Medical Response System (MMRS) Net</h2>
+          <p>Thursday 3pm ET</p>
+          <p><b>146.880</b> (-) 123.0 Hz Tone</p>
+        </div>
+
+        <div class="net">
+        <h2><a href="http://w4lee.org/nets.html">East Alabama Amateur Radio Club 2M Net</a></h2>
+            <p>Sunday 9pm ET</p>
+            <p><b>147.060</b> (+) 123.0 Hz Tone</p>
+        </div>
+
+        <h1>HF</h1>
+
+        <div class="net">
+        <h2><a href="http://alabama-ares.org/">Alabama ARES Digital Net </a></h2>
+            <p>Sunday 1530 CT</p>
+            <p><b>7.110</b> USB or</p>
+            <p><b>3.570</b> USB </p>
+            <p>PSK31 then PSK205RC3</p>
+        </div>
+
+        <div class="net">
+          <h2><a href="http://alabama-ares.org/">Alabama ARES Net </a></h2>
+            <p>Sunday 1600 CT</p>
+            <p><b>7.243</b> LSB or</p>
+            <p><b>3.965</b> USB</p>
+        </div>
+
+        <div class="net">
+          <h2><a=href"https://gaares.org/frequencies-gaares.php">Georgia ARES Digital Net </a></h2>
+            <p>Sunday 2100 UTC</p>
+            <p><b>3.583 MHz, offset 1000</b> USB</p>
+            <p>PSK125</p>
+        </div>
+
+        <div class="net">
+          <h2><a=href"https://gaares.org/frequencies-gaares.php"> Georgia ARES Net</a></h2>
+            <p>Sunday 2200 UTC</p>
+            <p><b>3.975</b> LSB</p>
+        </div>
+
+      </div>
+    </div>
+    <div id="footerDiv"></div>
+  </div>
+</body>
+</html>

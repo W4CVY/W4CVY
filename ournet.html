@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>CARC - Columbus Amateur Radio Club, Columbus, GA</title>
+  
+    <link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="default.css" rel="stylesheet" type="text/css">
+  
+    <!-- Begin Bootstrap includes -->
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!--End Bootstrap includes -->
+    
+    <!-- Begin boostrap dependancies -->
+    <script src="resources/js/jquery-3.2.1.min.js">  </script> 
+    <script src="resources/js/bootstrap.min.js"></script> 
+    <!-- End boostrap dependancies -->
+  
+    <!-- This method will load the header, navbar and footer html from their respective files -->
+    <script>
+      $(document).ready(function(){       
+        $('#headerDiv').load('header.html');
+        $('#navBarDiv').load('navbar.html');  
+        $('#footerDiv').load('footer.html');    
+      });
+    </script>
+  
+  </head>
+  <body>
+    <div class="container">
+      <div id="headerDiv"></div>
+      <div id="navBarDiv"></div>
+    </div>
+    <div class="container">
+      <div class="panel panel-default">
+        <div class="panel panel-heading">
+          <!--
+          <div id="netIntro">
+          -->
+            <h1>CHATTAHOOCHEE VALLEY AMATEUR RADIO NET</h1>
+            <p>Every Wednesday evening at 8:00 Eastern time
+              <br>on the club repeater 146.880 MHz with a (-) offset with a PL tone of 123
+            </p>
+            <p>All licensed Hams are encouraged to check in.</p>
+          <!--
+          </div>
+          -->
+        </div>
+        <div class="panel-body">
+          <div>
+            <iframe frameborder="0" height="580" src='https://docs.google.com/spreadsheet/pub?hl=en_US&hl=en_US&key=0AqA5OpsRkhPQdHFITUNra214X2NVS2E3b0cwUlFlSlE&output=html&widget=true' width="380"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel panel-heading">
+          <div id="netScriptHeader">
+            <h1>NET SCRIPT</h1>
+          </div>
+        </div>
+
+        <div class="panel panel-body">
+          <div id="netScript">
+            <h2>CHATTAHOOCHEE VALLEY NET SCRIPT</h2>
+
+            <p class="instruction">Net commences Wednesdays at 8:00PM ET</p>
+
+            <p>CQ CQ CQ - This is the Chattahoochee Valley Net.  
+              <br>This is <kbd>(your name)</kbd>, <kbd>(your call)</kbd>, and my QTH is <kbd>(your QTH)</kbd>.  
+              <br>I am the net control station for this session.</p>
+
+            <p>Is there any emergency or priority traffic?</p>
+
+            <p class="instruction">(Pause)</p>
+
+            <p>This net is open to all hams with privileges on this frequency.  
+              <br>We meet every Wednesday at 8:00 PM ET on the 146.88 Columbus Amateur Radio Club repeater.  
+              <br>This repeater has a minus offset and 123 PL tone.</p>
+
+            <p>The alternate repeater frequency is 146.745, also with a minus offset and 123 tone.  
+              <br>In the event that both repeaters are down we will meet on 146.55 simplex.</p>
+
+            <p>The purpose of the net is to train members to be proficient during emergencies, disseminate important information, and to encourage fellowship.  
+              <br>This is a directed net, so please direct all traffic to the net control station.  
+              <br>This is not a traffic handling net, however we will be glad to pass any traffic listed.  
+              <br>This is <kbd>(your call)</kbd> with the Chattahoochee Valley Net.</p>
+
+            <p>Are there any bulletins or announcements?  <span class="instruction">(Pause)</span></p>
+
+            <p class="instruction">Check-ins</p>
+
+            <p>I'll take check-ins first from mobile stations, followed by stations operating directly on the 146.88 repeater and then stations operating on linked repeaters.</p>
+
+            <p>Please announce your call sign phonetically, give your name and your location.  
+              <br>If any operator wishes to close, please announce that you will "secure your station".</p>
+
+            <p>At this time I will take check-ins from any mobile stations.  
+              <br>Mobile stations, please call.</p>
+
+            <p class="instruction">(Take comments from mobile stations before continuing.)</p>
+
+            <p>This is <kbd>(your call)</kbd> with the Chattahoochee Valley Net.  
+              <br>I will now take check-ins from stations operating directly on the 146.88 repeater.</p>
+
+            <p>Stations with suffixes beginning ALPHA through INDIA please call now.</p>
+
+            <p class="instruction">(List stations that checked in and repeat request if there may be more)
+              <br>(Don't take comments, yet.)</p>
+
+            <p>Stations with suffixes beginning JULIETT through ROMEO.</p>
+
+            <p class="instruction">(List stations that checked in and repeat request if there may be more)</p>
+
+            <p>Stations with suffixes beginning SIERRA through ZULU.</p>
+
+            <p class="instruction">(List stations that checked in and repeat request if there may be more)</p>
+
+            <p>Are there any other stations on the 146.88 repeater that have not checked in, yet?</p>
+
+            <p class="instruction">(List stations that checked in and repeat request if there may be more)</p>
+
+            <p>This is <kbd>(your call)</kbd> with the Chattahoochee Valley Net.  
+              <br>I'll now take check-ins from stations on the 441.975 repeater.</p>
+
+            <p class="instruction">(List stations that checked in and repeat request if there may be more)</p>
+
+            <p>I'll now take check-ins from stations on any other repeater.</p>
+
+            <p class="instruction">(List stations that checked in and repeat request if there may be more)</p>
+
+            <p>Are there any stations that have not checked in, yet?</p>
+
+            <p class="instruction">(List stations that check in)</p>
+
+            <p class="instruction">(Return to top of the roll and take comments from all stations that have not already commented, secured or indicated "no comments")</p>
+
+            <p>This is <kbd>(your call)</kbd> with the Chattahoochee Valley Net.  
+              <br>Are there any additional stations wishing to check in, please call now.</p>
+
+            <p class="instruction">(List stations, repeat, if needed and then take comments from the late check-ins)</p>
+
+            <p class="instruction">Technical Corner:</p>
+
+            <p>This portion of the net is for any discussion of technical items related to ham radio.  
+              <br>Does anyone have anything to share on the Technical Corner?</p>
+
+            <p class="instruction">Late Check Ins:</p>
+
+            <p>This is <kbd>(your call)</kbd> with the Chattahoochee Valley Net. 
+              <br>Do we have any late check-ins?</p>
+
+            <p class="instruction">(Take comments from latest check-ins.)</p>
+
+            <p class="instruction">Close:</p>
+
+            <p class="instruction">(Recap any bulletins or announcements.)</p>
+
+            <p>This is <kbd>(your call)</kbd> with the Chattahoochee Valley Net.  
+              <br>Thanks to each and every one for checking in.  
+              <br>We had <kbd>______</kbd> check-ins including net control.  
+              <br>This is <kbd>(your call)</kbd>, now returning the repeater to normal amateur radio use.</p>
+
+          </div>
+        </div>
+
+        <!--
+        <div class="panel panel-body">
+          <div id="netScript">
+            <h2>CHATTAHOOCHEE VALLEY NET</h2>
+            <p>CQ CQ CQ - This is the Chattahoochee Valley Net. 
+              <br>This is <span class="fillin">(your name)</span>, <span class="fillin">(your call)</span>, 
+              and my QTH is <span class="fillin">(your QTH)</span>. 
+              <br>I am the net control station for this session.</p>
+
+            <p>Is there any emergency or priority traffic?</span></b></p>
+
+            <p>This net is open to all hams with privileges on this frequency. 
+              <br>We meet every Wednesday at 8:30 PM ET on the 146.88 Columbus Amateur Radio Club repeater. 
+              <br>This repeater has a minus offset and a 123 PL tone. 
+              <br>The alternate repeater frequency is 146.745, with a minus offset and 123.0 tone. 
+              <br>In the event that both repeaters are down we will meet on 146.51 simplex.</p>
+
+            <p>The purpose of the net is to train members to be proficient during emergencies, disseminate 
+              important information, and to encourage fellowship. 
+
+            <p>This is a directed net, so please direct all traffic to the net control station. 
+              <br>This is not a traffic handling net, however we will be glad to pass any traffic listed.</p>
+
+            <p>This is <span class="fillin">(your call)</span> and the Chattahoochee Valley Net.</p>
+
+            <p>Are there any bulletins or announcements?</p>
+
+            <h2>Check-ins</h2>
+
+            <p>Please announce your call sign phonetically, give your name and your location. 
+              <br>If any operator wishes to close, please announce that you will "secure your station".</p>
+
+            <p>At this time I will take check-ins from any mobile stations.  
+              Mobile stations, please call.</p>
+
+            <p class="instruction">(Take comments from mobile stations before continuing.)</p>
+
+            <p>At this time I will take check-ins from fixed stations.</p>
+
+            <p class="instruction">(Allow all fixed stations to check in before going back for comments.)</p>
+
+            <p><span class="instruction">1.</span> Stations with suffixes beginning ALPHA through INDIA</p>
+
+            <p><span class="instruction">2.</span> Stations with suffixes beginning JULIETT through ROMEO</p>
+
+            <p><span class="instruction">3.</span> Stations with suffixes beginning SIERRA through ZULU</p>
+
+            <p><span class="instruction">4.</span> Any station ALPHA through ZULU</p>
+
+            <p class="instruction">(Return to top of the roll and take comments from all fixed stations)</p>
+
+            <p>This is <span class="fillin">(your call)</span> and the Chattahoochee Valley Net. 
+              <br>Are there any additional stations wishing to check in, please call now.</p>
+
+            <p class="instruction">(Take comments from the late check-ins)</p>
+
+            <h2>Technical Corner</h2>
+
+            <p>This portion of the net is for any discussion of technical items related to ham radio. 
+             <br>Does anyone have anything to share on the Technical Corner?</p>
+
+            <h2>Swap Net</h2>
+
+            <p>You may swap, sell, or give away any item that can be used with amateur radio. 
+              <br>You may give a price over the air, but please do not negotiate a price on the air. 
+              <br>Do we have any listings for the Chattahoochee Valley Swap Net?</p>
+
+            <h2>Late Check Ins:</h2>
+            
+            <p>This is <span class="fillin">(your call)</span> and the Chattahoochee Valley Net. 
+              <br>Do we have any late check-ins?</p>
+
+            <p class="instruction">(Take comments from latest check-ins.)</p>
+
+            <h2>Close</h2>
+
+            <p class="instruction">(Do a recap of any bulletins or announcements.)</p>
+
+            <p>This is <span class="fillin">(your call)</span> and the Chattahoochee Valley Net. 
+              <br>Thanks to each and everyone for checking in.  
+              <br>We had <span class="fillin">______</span> check-ins including net control.</p>
+
+            <p>This is <span class="fillin">(your call)</span>, now returning the repeater to normal amateur radio use.</p>
+
+          </div>
+        </div>
+        -->
+      </div>
+    </div>
+    <div id="footerDiv"></div>
+  </div>
+</body>
+</html>

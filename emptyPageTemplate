@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+
+	<title>CARC - Columbus Amateur Radio Club, Columbus, GA</title>
+
+	<link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link href="default.css" rel="stylesheet" type="text/css">
+
+	<!-- Begin Bootstrap includes -->
+	<link href="resources/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<!--End Bootstrap includes -->
+
+	<!-- Begin boostrap dependancies -->
+	<script src="resources/js/jquery-3.2.1.min.js">
+	</script>
+	<script src="resources/js/bootstrap.min.js">
+	</script>
+	<!-- End boostrap dependancies -->
+
+	<!-- This method will load the header, navbar and footer html from their respective files -->
+	<script>
+	   $(document).ready(function(){        
+	           $('#headerDiv').load('header.html');
+	           $('#navBarDiv').load('navbar.html');    
+	           $('#footerDiv').load('footer.html');    
+	   });
+	</script>
+	<script type="text/javascript">
+
+	     var _gaq = _gaq || [];
+	     _gaq.push(['_setAccount', 'UA-26840234-1']);
+	     _gaq.push(['_setDomainName', 'w4cvy.org']);
+	     _gaq.push(['_trackPageview']);
+
+	     (function() {
+	       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	     })();
+	</script>
+
+	<div class="container">
+		<div id="headerDiv"></div>
+		<div id="navBarDiv"></div>
+	</div>
+</head>
+<body>
+	<div class="container">	
+		
+		<!-- Begin Content Area -->
+		<div class="panel panel-default">
+		<div class="panel-heading">ADD YOUR HEADING HERE</div>
+			<div class="panel-body">
+				ADD YOUR CONTENT HERE 
+			</div>
+		</div>
+
+		<div id="footerDiv"></div>
+	</div>
+</body>
+</html>

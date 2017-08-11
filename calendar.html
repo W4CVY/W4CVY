@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>CARC - Columbus Amateur Radio Club, Columbus, GA</title>
+
+  <link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="default.css" rel="stylesheet" type="text/css">
+
+  <!-- Begin Bootstrap includes -->
+  <link href="resources/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <!--End Bootstrap includes -->
+
+  <!-- Begin boostrap dependancies -->
+  <script src="resources/js/jquery-3.2.1.min.js">  </script> 
+  <script src="resources/js/bootstrap.min.js"></script> 
+  <!-- End boostrap dependancies -->
+
+  <!-- This method will load the header, navbar and footer html from their respective files -->
+  <script>
+    $(document).ready(function(){       
+      $('#headerDiv').load('header.html');
+      $('#navBarDiv').load('navbar.html');  
+      $('#footerDiv').load('footer.html');    
+    });
+  </script>
+
+  <script type="text/javascript"> 
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-26840234-1']);
+      _gaq.push(['_setDomainName', 'w4cvy.org']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+    <div class="container">
+      <div id="headerDiv"></div>
+    <div id="navBarDiv"></div>
+    </div>
+</head>
+<body>
+  <div class="container">
+    <div class="panel panel-default">
+      <!-- <div class="panel-heading">CARC Calender</div> -->
+      <div class="panel-body">
+        <div> <iframe frameborder="0" height="600" scrolling="no" src="https://www.google.com/calendar/b/0/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=w4cvy.org_nuojg55ictiq5oek1cli29glic%40group.calendar.google.com&amp;color=%23125A12&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%23691426&amp;ctz=America%2FNew_York" style=" border-width:0" width="100%"></iframe> </div>
+        <div align="center"> Keep up to date: Click on the "+" symbol to add our calendar directly to your Google Calendar.  </div>
+      </div>
+    </div>
+  </div>
+  <div id="footerDiv"></div>
+</body>
+</html>
