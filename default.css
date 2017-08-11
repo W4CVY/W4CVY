@@ -101,7 +101,7 @@ a:hover { text-decoration: underline;
 
 .panel-body h1 { font-size:1.6em; font-weight:bold; margin:10px; text-align:center; }
 .panel-body h2 { font-size:1.0em; font-weight:normal; margin:10px; text-align:center; }
-.panel-body p { font-size:1.0em; text-align:left; }
+.panel-body p { font-size:1.0em; text-align:center; }
 
 .net { border:1px solid lightgray; margin: 10px; }
 .net>h2>a { font-size:100%; color:black; font-family:Arial; font-weight:bold; }
