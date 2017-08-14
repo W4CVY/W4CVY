@@ -14,12 +14,30 @@
 
   <!-- This method will load the header, navbar and footer html from their respective files -->
   <script>
-     $(document).ready(function(){        
+     $(document).ready(function(){
              $('#headerDiv').load('header.html');
-             $('#navBarDiv').load('navbar.html');    
-             $('#footerDiv').load('footer.html');    
+             $('#navBarDiv').load('navbar.html');
+             $('#footerDiv').load('footer.html');
      });
   </script>
+  <style type="text/css">
+    ul.repeaterGrid { display:grid; list-style-type:none; }
+    @media (max-width:599px)  { ul.repeaterGrid { grid-template-columns: 1fr; } }
+    @media (min-width:600px)  { ul.repeaterGrid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width:900px)  { ul.repeaterGrid { grid-template-columns: repeat(3, 1fr); } }
+    @media (min-width:1200px)  { ul.repeaterGrid { grid-template-columns: repeat(4, 1fr); } }
+    @media (min-width:1500px)  { ul.repeaterGrid { grid-template-columns: repeat(5, 1fr); } }
+    @media (min-width:1800px)  { ul.repeaterGrid { grid-template-columns: repeat(6, 1fr); } }
+    ul.repeaterGrid>li { border:1px solid gray; margin:3px; padding:3px; }
+    ul.repeaterGrid>li>h1 { font-size:1.2em; font-weight:bold; margin:3px; text-align:center; }
+    ul.repeaterGrid>li>h2 { font-size:1.1em; font-weight:bold; margin:3px; text-align:center; }
+    ul.repeaterGrid>li>h2>a { font-size:1.0em; font-weight:bold; margin:3px; }
+    ul.repeaterGrid>li>h3 { font-size:1.0em; font-weight:normal; font-style:italic; margin:3px; text-align:center; }
+    ul.repeaterGrid>li>p { text-align:left; margin:4px 2px; }
+    ul.repeaterGrid>li>ul>li { text-align:left; }
+    .new { color:red; font-style:italic; font-weight:bold; }
+    .footnote { color:red; font-weight:bold; }
+  </style>
 </head>
 <body>
 
@@ -32,495 +50,525 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h1>
-          <a href="https://en.wikipedia.org/wiki/Columbus,_Georgia">COLUMBUS AREA</a> 
-          <a href="https://en.wikipedia.org/wiki/Amateur_radio">HAM RADIO</a> 
+          <a href="https://en.wikipedia.org/wiki/Columbus,_Georgia">COLUMBUS AREA</a>
+          <a href="https://en.wikipedia.org/wiki/Amateur_radio">HAM RADIO</a>
           <a href="https://en.wikipedia.org/wiki/Repeater">REPEATERS</a>
         </h1>
-        <p class="tagline">Updated: 07/29/2017</p>
+        <p class="tagline">Updated: 08/13/2017</p>
         <p>Contact <a href="mailto:ak4py@w4cvy.org">ak4py@w4cvy.org</a> with repeater questions<p>
         <p>Contact <a href="mailto:k4bll@w4cvy.org">k4bll@w4cvy.org</a> with page updates, corrections</p>
       </div>
 
       <div class="panel-body">
-        <!-- Start table of License Requirement Warning -->
-        <table align="center" bgcolor="#D9DFAA" border="1" cellpadding="2" cellspacing="2" class="table" frame="box" rules="all" width="98%">
-          
-          <tr>
-            
-            <td align="center" colspan="4"><i><b><font face="Verdana,Geneva,Arial,Helvetica,sans-serif"><br>
-            Transmitting on any amateur radio frequency in the U.S., including these repeaters, requires a valid amateur radio license issued by the FCC to the individual control operator.<br>
-            If you have questions or are interested in earning your license, visit our <a href="http://w4cvy.org/testing.htm">"Testing"</a> page.</font></b></i><br>
-            <br></td>
-            
-          </tr>
-          
-        </table>
-        
-        
-        <!-- Start table of 2M repeaters -->
-        
-        <table align="center" bgcolor="#D9DFAA" border="1" cellpadding="2" cellspacing="2" class="table" frame="box" rules="all" width="98%">
-          
-          <tr>
-            
-            <td align="center" colspan="4"><b><font color="navy" face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="+1">2M (144 MhZ) Repeater</font></b><br>
-            (Standard 1.600 MHz offset unless noted)
-            </td>
-            
-          </tr>
-          
-          <tr>
-            
-            <td bgcolor="#9D9BF6" colspan="2"><strong>Digital or Dual Modes</strong></td>
-            
-            <td colspan="2"><strong>Analog Only</strong></td>
-            
-          </tr>
-          
-          <tr>
-            
-            <td bgcolor="#9D9BF6" width="25%">
-            <font color="red"><b>Dual Modes</b></font><br>
-            <b>146.610</b> (-)<br>
-            <strong>W4CVY</strong><br>
-            Phenix City (Lee County), AL<br>
-            Covers the greater Columbus area<br>
-            <br>
-            <strong>Yaesu System Fusion</strong> AMS In/Dual Mode Out<br>
-            <br>
-            <strong>INPUT (146.010):</strong>Digital C4FM (DN or VW)<br>
-            <b><i>OR</i></b> Analog (normal) FM (123.0 Hz tone)<br>
-            <br>
-            <strong>SIMULTANEOUS OUTPUT:</strong><br>
-            Analog FM: 146.61<br>
-            Digital C4FM: 442.30<br>
-            <br>
-            <i>Digital and analog users can talk to each other on this repeater!</i><br>
-            <br></td>
-            
-            <td bgcolor="#9D9BF6" width="25%">
-            <font color="red"><b>Dual Modes</b></font><br>
-            <b>146.940</b> (-) 123.0 Hz Tone analog<br>
-            <strong>WA4QHN</strong><br>
-            <br>
-            Salem, AL<br>
-            <br>
-            Remote Input in Phenix City on 147.54<br>
-            123.0 Hz tone analog or<br>
-            C4FM Yaesu System Fusion digital<br>
-            <br>
-            <i>All repeater output is analog.<br>
-            Around Phenix City, program 146.94 with a plus offset to use the remote input.<br>
-            Around Salem/Opelika, program 146.94 with a minus offset to use the main input.<br>
-            Only the remote input in PC will accept digital input.</i><br></td>
-            
-            <td width="25%">
-              
-            <b>146.880</b> (-) 123.0 Hz Tone<br>
-            <strong>W4CVY</strong><br>
-            Phenix City (Lee Co), Al/Columbus, GA<br>
-            <br>
-            <i> NEW:</i> Full Time link to the 53.610 repeater<br>
-            <br>
-            Home to:<br>
-            Chattahoochee Valley Net (Wed),<br>
-            MMRS Net (Thu) <br>
-            & area <a href="http://www.srh.noaa.gov/ffc/?n=skywarn"><i>SKYWARN</i></a> Nets. <font color="red">**</font><br>
-            
-            <br>
-            </td>
-            
-            <td width="25%"><b>146.745</b> (-) 123.0 Hz Tone<br>
-            <strong>WX4RUS</strong> Russell Co ARES<br>
-            Phenix City, AL/Columbus, GA</td>
-            
-          </tr>
-          
-          <tr>
-            
-            <td bgcolor="#9D9BF6"><strong>144.92 (+2.50MHz)</strong> <strong>D-Star</strong><br>
-            <strong><a href="http://www.dstarusers.org/viewrepeater.php?system=KJ4KLE">KJ4KLE-C</a></strong><br>
-            Warm Springs, GA<br>
-            Usually linked to REF 030B</td>
-            
-            <td bgcolor="#9D9BF6"><strong>147.375 (+)</strong> <strong>D-Star</strong><br>
-            <strong><a href="http://www.w4lee.org/repeaters.html">W4LEE</a></strong><br>
-            Opelika, AL<br>
-            Usually linked to REF 058B</td>
-            
-            <td><b>147.150</b> (+) 123.0 Hz Tone<br>
-            <strong>WX4LEE</strong><br>
-            Salem Hill, AL</td>
-            
-            <td><b>147.120</b> (+) 123.0 Hz Tone<br>
-            <strong><a href="http://www.w4lee.org/repeaters.html">W4LEE</a></strong><br>
-            Opelika, AL</td>
-            
-          </tr>
-          
-          <tr>
-            <td></td>
-            <td></td>
-            
-            <td><b>146.720</b> (-) 123.0 Hz Tone<br>
-            <strong>WA4QHN</strong><br>
-            Phenix City, AL</td>
-            <td></td>
-            
-          </tr>
-          
-          <tr>
-            <td></td>
-            <td></td>
-            
-            <td>
-              <b>145.190</b> (-) 110.9 Hz Tone<br>
-              <strong>WB4ULJ</strong><br>
-              Pine Mountain, GA<br>
-              Usually linked to 441.975 repeater in Ellerslie<br>
-              Also links to <a href="http://selinkedrepeater.net/">Southeastern Linked Repeater Net</a>
-            </td>
-            
-            <td><b>147.060</b> (+) 123.0 Hz Tone<br>
-            <strong><a href="http://www.w4lee.org/repeaters.html">KA4Y</a></strong><br>
-            Echolink Node: 168814 (WB4BYQ-R)<br>
-            Beauregard, AL</td>
-            
-          </tr>
-          
-        </table>
-        <br>
-        
-        
-        <!-- Start table of 1.25M repeaters -->
-        
-        <table align="center" bgcolor="#D9DFAA" border="1" cellpadding="2" cellspacing="2" class="table" frame="box" rules="all" width="98%">
-          
-          <tr>
-            
-            <td align="center" colspan="2"><b><font color="navy" face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="+1">1.25M 220 MhZ Repeaters</font></b><br>
-            (Standard 1.600 MHz offset unless noted)<br>
-            <strong>Analog</strong></td>
-            
-          </tr>
-          
-          <tr>
-            
-            <td width="50%">224.660 (-)<br>
-            <strong>WB4ULJ</strong><br>
-            Pine Mountain, GA</td>
-            
-            <td width="50%">224.360 (-) 100.0 Hz Tone<br>
-            <strong>WB4ULJ</strong><br>
-            Pine Mountain, GA</td>
-            
-          </tr>
-          
-        </table>
-        <br>
-        
-        
-        <!-- Start table of 70cm repeaters -->
-        
-        <table align="center" bgcolor="#D9DFAA" border="1" cellpadding="2" cellspacing="2" class="table" frame="box" rules="all" width="98%">
-          
-          <tr>
-            <td align="center" colspan="4"><b><font color="navy" face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="+1">70cm 440MhZ Repeaters</font></b><br>
-            (Standard 5.000 MHz offset unless noted)</td>
-          </tr>
-          
-          <tr>
-            <td bgcolor="#9D9BF6" colspan="2"><strong>Digital or Dual Modes</strong></td>
-            <td colspan="2"><strong>Analog Only</strong></td>
-          </tr>
-          
-          <tr>
-            <td bgcolor="#9D9BF6" width="25%"><font color="red">
-            <b>Dual Modes</b></font><br>
-            <b>442.200</b> (+) DCS 703<br>
-            <strong>W4CVY</strong><br>
-            Columbus, GA<br>
-            <strong>WIRE-X Node: N4MAR</strong><br><br>
-            <strong>Yaesu System Fusion</strong> AMS In / AMS Out<br>
-            <br>
-            <strong>INPUT:</strong> Digital C4FM (DN or VW)<br>
-            <b>OR</b> Analog (normal) FM DCS code 703<br>
-            <br>
-            <strong>OUTPUT:</strong> Same as the input signal<br>
-            <br>
-            <i>Analog FM Users should use DCS Code 703 on both xmit and rcv to avoid hearing digital audio.<br><br>
-            WIRES-X Linking requires digital C4FM.</i><br>
-            </td>
-            
-            <td bgcolor="#9D9BF6" width="25%"><font color="red">
-            <b>Dual Modes</b></font><br>
-            <b>443.575</b> (+) 123.0 Hz Tone<br>
-            <strong>WX4RUS</strong><br>
-            Phenix City, AL<br>
-            <br>
-            <strong>Yaesu System Fusion</strong> AMS In / AMS Out<br>
-            <br>
-            <strong>INPUT:</strong> Digital C4FM (DN or VW)<br>
-            <b>OR</b> Analog (normal) FM 123.0 Hz Tone<br>
-            <br>
-            <strong>OUTPUT:</strong> Same as the input signal<br>
-            <br>
-            <i>Analog FM Users should use 123.0 Hz tone on both xmit and rcv to avoid hearing digital audio.</i><br></td>
-            
-            
-            <td width="25%">
-            <b>442.100</b> (+) 123.0 Hz Tone<br>
-            <strong>W9TVM</strong><br>
-            Columbus, GA<br>
-            <strong>IRLP Node: 8739</strong><br>
-            <strong>EchoLink Node: 709955 (AK4PY-L)</strong><br>
-            <br>
-            <i>This repeater uses an internet connection to connect to other repeaters outside of our area for various regularly scheduled nets.</i><br>
-            <a href="W9TVM_Net_Schedule.pdf" target="_blank">Click here to see a schedule and commands (in a new tab).</a><br>
-            <br>
-            Please confirm link status before transmitting so you don't tranmsit across the linked repeaters, unless that's what you intended to do.<br>
-            <br>
-            </td>
+        <p>Transmitting on any amateur radio frequency in the U.S., including these repeaters, requires a valid amateur radio license issued by the FCC to the individual control operator.<br>
+          If you have questions or are interested in earning your license, visit our <a href="http://w4cvy.org/testing.html">testing</a> page.
+        </p>
 
-            <td width="25%"><b>444.200</b> (+) 123.0 Hz Tone<br>
-            <strong>WA4QHN</strong><br>
-            Phenix City, AL
-            </td>
-            
-          </tr>
-          
-          <tr>
-            
-            <td bgcolor="#9D9BF6"><strong>440.675 (+5.00MHz)</strong> <strong>D-Star</strong><br>
-            <strong><a href="http://www.dstarusers.org/viewrepeater.php?system=KJ4KLE">KJ4KLE-B</a></strong><br>
-            Warm Springs, GA</td>
-            
-            <td></td>
-            
-            <td><b>444.400</b> (+)<br>
-            <strong>WB4ULJ</strong><br>
-            Pine Mountain, GA
-            </td>
-            
-            <td><strong>441.975</strong> (+) 67.0 Hz Tone<br>
-            <strong>WB4ULK</strong><br>
-            Ellerslie, Ga<br>
-            Usually linked to Pine Mountain 145.190 repeater.<br>
-            Links to 146.88 Chatt. Valley Net Wed: 8:00-8:55 PM<br>
-            Relays NOAA Weather Radio Warnings <font color="red">**</font><br>
-            May link to other repeaters<br>
-            <br>Allstar access
-            </td>
-            
-          </tr>
-          
-          <tr>
-            <td></td>
-            <td></td>
-            
-            <td><b>444.175</b> (+) 123.0 Hz Tone<br>
-            <strong>N4TKT</strong><br>
-            Opelika, AL</td>
-            <td><b>444.100</b> (+) 123.0 Hz Tone<br>
-            <strong>WA4QHN</strong><br>
-            Salem, AL</td>
-          </tr>
-        
-          <tr>
-            <td></td>
-            <td></td>
-            
-            <td><strong>444.125</strong> (+) 123.0 Hz Tone<br>
-            <strong><a href="http://www.w4lee.org/repeaters.html">W4LEE</a></strong><br>
-            Gold Hill, AL</td>
-            
-            <td><strong>441.800</strong> (+) 123.0 Hz Tone<br>
-            <strong>W8JVF</strong><br>
-            N. Ft. Benning area, GA<br>
-            (Limited Range)<br>
-            Allstar and Echolink access<br></td>
-          
-          </tr>
-          
-        </table>
-        
-        <br>
-        
-        
+        <h1>2 Meter (144 MHz) Repeaters</h1>
+
+        <h2>Standard 1.600 MHz offset unless otherwise noted.</h2>
+
+        <ul class="repeaterGrid">
+          <li>
+            <h2>Dual Mode</h2>
+            <h1>146.610 (-)</h1>
+            <h3>123.0 Hz Tone</h3>
+            <h2>W4CVY</h2>
+            <h3>Smiths Station, AL
+            <br />Columbus, GA</h3>
+            <p>Input (146.010):
+              <ul>
+                <li>Digital C4FM</li>
+                <li>Analog FM</li>
+              </ul>
+            </p>
+            <p>Simultaneous Output:
+              <ul>
+                <li>Analog FM: 146.61</li>
+                <li>Digital C4FM: 442.30</li>
+              </ul>
+            </p>
+            <p>Note:
+              <ul>
+                <li>Digital and analog users can talk to each other on this repeater.</li>
+              </ul>
+            </p>
+          </li>
+
+          <li>
+            <h2>Dual Mode</h2>
+            <h1>146.940 (+/-)</h1>
+            <h3>123.0 Hz Tone</h3>
+            <h2>WA4QHN</h2>
+            <h3>Salem, AL</h3>
+            <p>Salem Input 146.94:
+              <ul>
+                <li>Analog Only</li>
+              </ul>
+            </p>
+            <p>Phenix City Input 147.54:
+              <ul>
+                <li>Analog</li>
+                <li>YSF Digital</li>
+              </ul>
+            </p>
+            <p>Output:
+              <ul>
+                <li>Analog Only</li>
+              </ul>
+            </p>
+
+          </li>
+
+          <li>
+            <h2>D-Star</h2>
+            <h1>144.92 (+2.50MHz)</h1>
+            <h3><br /></h3>
+            <h2><a href="http://www.dstarusers.org/viewrepeater.php?system=KJ4KLE">KJ4KLE-C</a></h2>
+            <h3>Warm Springs, GA</h3>
+            <p>Link:
+              <ul>
+                <li>DStar REF030B</li>
+              </ul>
+            </p>
+          </li>
+
+          <li>
+            <h2>D-Star</h2>
+            <h1>147.375 (+)</h1>
+            <h3><br /></h3>
+            <h2><a href="http://www.w4lee.org/repeaters.html">W4LEE</a></h2>
+            <h3>Opelika, AL</h3>
+            <p>Link:
+              <ul>
+                <li>DStar REF058B</li>
+              </ul>
+            </p>
+          </li>
+
+          <li>
+            <h2>Analog</h2>
+            <h1>146.880 (-)</h1>
+            <h3>123.0 Hz Tone</h3>
+            <h2>W4CVY</h2>
+            <h3>Ladonia, Al
+              <br />Columbus, GA</h3>
+            <p>Link:
+              <ul>
+                <li>53.610 Repeater</li>
+                <li>Other repeaters often link to this one</li>
+              </ul>
+            </p>
+            <p>Home to:
+              <ul>
+                <li>Chattahoochee Valley Net (Wed),</li>
+                <li>MMRS Net (Thu)</li>
+                <li>area <a href="http://www.srh.noaa.gov/ffc/?n=skywarn"><i>SKYWARN</i></a> Nets. <span class="footnote">**</span></li>
+              </ul>
+            </p>
+          </li>
+
+          <li>
+            <h2>Analog</h2>
+            <h1>146.745 (-)</h1>
+            <h3>123.0 Hz Tone</h3>
+            <h2>WX4RUS <br />Russell Co ARES</h2>
+            <h3>Phenix City, AL
+              <br />Columbus, GA</h3>
+          </li>
+
+          <li>
+            <h2>Analog</h2>
+            <h1>145.190 (-)</h1>
+            <h3>110.9 Hz Tone</h3>
+            <h2>WB4ULJ</h2>
+            <h3>Pine Mountain, GA</h3>
+            <p>Links:
+              <ul>
+                <li>441.975 Repeater</li>
+                <li><a href="http://selinkedrepeater.net/">Southeastern Linked Repeater Net</a></li>
+              </ul>
+            </p>
+          </li>
+
+          <li>
+            <h2>Analog</h2>
+            <h1>146.720 (+)</h1>
+            <h3>123.0 Hz Tone</h3>
+            <h2>WA4QHN</h2>
+            <h3>Phenix City, AL</h3>
+          </li>
+
+          <li>
+            <h2>Analog</h2>
+            <h1>147.060</b> (+)</h1>
+            <h3>123.0 Hz Tone</h3>
+            <h2><a href="http://www.w4lee.org/repeaters.html">KA4Y</a></h2>
+            <h3>Beauregard, AL</h3>
+            <p>Links:
+              <ul>
+                <li>Echolink: 168814 (WB4BYQ-R)</li>
+              </ul>
+            </p>
+          </li>
+
+          <li>
+            <h2>Analog</h2>
+            <h1>147.120 (+)</h1>
+            <h3>123.0 Hz Tone</h3>
+            <h2><a href="http://www.w4lee.org/repeaters.html">W4LEE</a></h2>
+            <h3>Opelika, AL</h3>
+          </li>
+
+          <li>
+            <h2>Analog</h2>
+            <h1>147.150 (+)</h1>
+            <h3>123.0 Hz Tone</h3>
+            <h2>WX4LEE</h2>
+            <h3>Salem Hill, AL</h3>
+          </li>
+
+
+        </ul>
+
+        <!-- Start table of 1.25M repeaters -->
+        <h1>1.25 Meter (220 MHz) Repeaters</h1>
+        <h2>Standard 1.600 MHz offset unless otherwise noted.</h2>
+
+        <ul class="repeaterGrid">
+          <li>
+            <h2>Analog</h2>
+            <h1>224.660 (-)</h1>
+            <h3><br /></h3>
+            <h2>WB4ULJ</h2>
+            <h3>Pine Mountain, GA</h3>
+          </li>
+
+          <li>
+            <h2>Analog</h2>
+            <h1>224.360 (-)</h1>
+            <h3>100.0 Hz Tone</h3>
+            <h2>WB4ULJ</h2>
+            <h3>Pine Mountain, GA</h3>
+          </li>
+
+        </ul>
+
+        <!-- Start table of 70cm repeaters -->
+
+        <h1>70 Centimeter (440 MHz) Repeaters</h1>
+        <h2>Standard 5.000 MHz offset unless otherwise noted.</h2>
+
+        <ul class="repeaterGrid">
+          <li>
+            <h2>Dual Mode</h2>
+            <h1>442.200 (+)</h1>
+            <h3>DCS 703</h3>
+            <h2>W4CVY</h2>
+            <h3>Columbus, GA</h3>
+            <p>Input:
+              <ul>
+                <li>Digital C4FM</li>
+                <li>Analog FM</li>
+              </ul>
+            </p>
+            <p>Output:
+              <ul>
+                <li>Same mode as input</li>
+              </ul>
+            </p>
+            <p>Link:
+              <ul>
+                <li>WIRES-X: N4MAR</li>
+              </ul>
+            </p>
+            <p>Note:
+              <ul>
+                <li>Analog users should use xmit and rcv DCS to avoid hearing digital audio.</li>
+              </ul>
+            </p>
+          </li>
+
+          <li>
+            <h2>Dual Mode</h2>
+            <h1>443.575</b> (+)</h1>
+            <h3>123.0 Hz Tone</h3>
+            <h2>WX4RUS</h2>
+            <h3>Ladonia, AL</h3>
+            <p>INPUT:
+              <ul>
+                <li>Digital C4FM</li>
+                <li>Analog FM</li>
+              </ul>
+            </p>
+            <p>OUTPUT:
+              <ul>
+                <li>Same mode as input</li>
+              </ul>
+            </p>
+            <p>Note:
+              <ul>
+                <li>Analog users should use XMIT and RCV Tone DCS to avoid hearing digital audio.</li>
+              </ul>
+            </p>
+          </li>
+
+          <li>
+            <h2>D-Star</h2>
+            <h1>440.675 (+)</h1>
+            <h3><br /></h3>
+            <h2><a href="http://www.dstarusers.org/viewrepeater.php?system=KJ4KLE">KJ4KLE-B</a></h2>
+            <h3>Warm Springs, GA</h3>
+          </li>
+
+          <li>
+            <h2>Analog</h2>
+            <h1>442.100 (+)</h2>
+            <h3>123.0 Hz Tone</h3>
+            <h2>W9TVM</h2>
+            <h3>Columbus, GA</h3>
+            <p>Links:
+              <ul>
+                <li>IRLP: 8739</li>
+                <li>EchoLink: 709955 (AK4PY-L)</li>
+              </ul>
+            </p>
+            <p>Note:
+              <ul>
+                <li>This repeater connects via internet to repeaters outside our area for various scheduled
+                nets.<a href="files\W9TVM_Net_Schedule.pdf" target="_blank">Click here for a schedule and commands.</a></li>
+                <li>Please confirm link status before transmitting so you don't tranmsit across the linked repeaters, unless that's what you intended.</li>
+              </ul>
+            </p>
+          </li>
+
+          <li>
+            <h2>Analog</h2>
+            <h1>444.200 (+)</h1>
+            <h3>123.0 Hz Tone</h3>
+            <h2>WA4QHN</h2>
+            <h3>Phenix City, AL</h3>
+          </li>
+
+          <li>
+            <h2>Analog</h2>
+            <h1>441.975 (+)</h1>
+            <h3>67.0 Hz Tone</h3>
+            <h2>WB4ULK</h2>
+            <h3>Ellerslie, GA</h3>
+            <p>LINKS:
+              <ul>
+                <li>145.190 Repeater</li>
+                <li>146.880 Repeater during nets</li>
+                <li>NOAA Wx Radio<span class="footnote">**</span></li>
+                <li>Allstar</li>
+                <li>May link to other repeaters</li>
+              </ul>
+            </p>
+          </li>
+
+          <li>
+            <h2>Analog</h2>
+            <h1>444.400 (+)</h1>
+            <h3><br /></h3>
+            <h2>WB4ULJ</h2>
+            <h3>Pine Mountain, GA</h3>
+          </li>
+
+          <li>
+            <h2>Analog</h2>
+            <h1>444.175 (+)</h1>
+            <h3>123.0 Hz Tone</h3>
+            <h2>N4TKT</h2>
+            <h3>Opelika, AL</h3>
+          </li>
+
+          <li>
+            <h2>Analog</h2>
+            <h1>444.100 (+)</h1>
+            <h3>123.0 Hz Tone</h3>
+            <h2>WA4QHN</h2>
+            <h3>Salem, AL</h3>
+          </li>
+
+          <li>
+            <h2>Analog</h2>
+            <h1>444.125 (+)</h1>
+            <h3>123.0 Hz Tone</h3>
+            <h2><a href="http://www.w4lee.org/repeaters.html">W4LEE</a></h2>
+            <h3>Gold Hill, AL</h3>
+          </li>
+
+          <li>
+            <h2>Analog</h2>
+            <h1>441.800 (+)</h1>
+            <h3>123.0 Hz Tone</h3>
+            <h2>W8JVF</h2>
+            <h3>N. Ft. Benning, GA</h3>
+            <p>LINKS:
+              <ul>
+                <li>Allstar</li>
+                <li>EchoLink</li>
+              </ul>
+            </p>
+          </li>
+
+        </ul>
+
+
         <!-- Start table of 33cm repeaters -->
-        
-        <table align="center" bgcolor="#D9DFAA" border="1" cellpadding="2" cellspacing="2" class="table" frame="box" rules="all" width="98%">
-          
-          <tr>
-            
-            <td align="center"><b><font color="navy" face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="+1">33cm 902 MhZ Repeaters</font></b><br>
-            (Standard 12.00 MHz offset unless noted)<br>
-            </td>
-            
-          </tr>
-          
-          <tr>
-          
-            <td align="center"><b><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="+0">COMING.....</font></b> (soon?)<br>
-            <br></td>
-            
-          </tr>
-          
-        </table>
-        
-        <br>
-        
-        
+
+        <h1>33 Centimeter (902 MHz) Repeaters</h1>
+        <h2>Standard 12.00 MHz offset unless otherwise noted.</h2>
+
+        <ul class="repeaterGrid">
+
+          <li>
+            <h2>Analog</h2>
+            <h1>927.600 (+)</h1>
+            <h3>123.0 Hz Tone</h3>
+            <h2>W4CVY</h2>
+            <h3>Columbus, GA</h3>
+
+            <h2>Coming..... (soon?)</h2>
+          </li>
+
+        </ul>
+
         <!-- Start table of 6M repeaters -->
-        
-        <table align="center" bgcolor="#D9DFAA" border="1" cellpadding="2" cellspacing="2" class="table" frame="box" rules="all" width="98%">
-          
-          <tr>
-            
-            <td align="center" colspan="2"><b><font color="navy" face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="+1">6m 50 MhZ Repeaters</font></b><br>
-            (Standard 1.00 MHz offset unless noted)<br>
-            <strong>Analog</strong></td>
-          
-          </tr>
-          
-          <tr>
-          
-            <td width=50%> 53.610</font></b> (-)<br>
-            <strong>W4CVY</strong><br>
-            Ladonia, AL<br>
-            Linked full-time to 146.880 repeater
-            </td>
-            
-            <td width="50%">53.010</font></b> (-)<br>
-            <strong>KK4ICE</strong><br>
-            Salem, AL</td>
-            
-          </tr>
-          
-        </table>
-        <br>
-        
-        
+
+        <h1>6 Meter (50 MHz) Repeaters</h1>
+        <h2>Standard 1.00 MHz offset unless otherwise noted.</h2>
+
+        <ul class="repeaterGrid">
+          <li>
+            <h2>Analog</h2>
+            <h1>53.610 (-)</h1>
+            <h3>123.0 Hz Tone</h3>
+            <h2>W4CVY</h2>
+            <h3>Ladonia, AL</h3>
+            <p>Link:
+              <ul>
+                <li>146.880 Repeater</li>
+              </ul>
+            </p>
+          </li>
+
+          <li>
+            <h2>Analog</h2>
+            <h1>53.010 (-)</h1>
+            <h3><br /></h3>
+            <h2>KK4ICE</h2>
+            <h3>Salem, AL</h3>
+          </li>
+
+        </ul>
+
+
         <!-- Start table of SIMPLEX frequencies -->
-        
-        <table align="center" bgcolor="#D9DFAA" border="1" cellpadding="2" cellspacing="2" class="table" frame="box" rules="all" width="98%">
-          
-          <tr>
-          
-            <td align="center" colspan="2"><b><font color="navy" face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="+1"><i>Simplex</i> Frequencies</font></b><br>
-            (Standard 0.00 MHz offset)</td>
-            
-          </tr>
-          
-          <tr>
-          
-            <td bgcolor="#9D9BF6"><strong>Digital</strong></td>
-            <td><strong>Analog Only</strong></td>
-            
-          </tr>
-          
-          <tr>
-          
-            <td bgcolor="#9D9BF6" width="50%"><b>145.69</b><br>
-            <strong>C4FM Digital Voice Calling</strong><br></td>
-            
-            <td width="50%"><b>146.52</b><br>
-            <strong>National FM Calling</strong><br></td>
-            
-          </tr>
-          
-          <tr>
-          
-            <td bgcolor="#9D9BF6"><b>145.67</b><br>
-            <strong>DSTAR Digital Voice Calling</strong><br></td>
-            
-            <td><b>446.00</b><br>
-            <strong>National FM Calling</strong><br></td>
-            
-          </tr>
-          
-          <tr>
-            <td></td>
-            
-            <td><b>146.55</b><br>
-            <strong>Columbus Area VHF FM Simplex</strong><br>
-            (repeater failure)<br>
-            <br></td>
-            
-          </tr>
-          
-          <tr>
-          
-            <td></td>
-            
-            <td><b>446.025 DCS:703N</b><br>
-            <strong>Columbus Area UHF FM Simplex</strong><br>
-            (great for HT's at Field Day and travel to hamfests)<br>
-            <br></td>
-            
-          </tr>
-          
-          
-        </table>
-        
-        <br>
-        
-        
+
+        <h1>Simplex Frequencies</h1>
+        <h2>Standard 0.00 MHz offset</h2>
+
+        <ul class="repeaterGrid">
+
+          <li>
+            <h2>Digital YSF</h2>
+            <h1>145.69</h1>
+            <p>C4FM Digital Voice Calling</p>
+          </li>
+
+          <li>
+            <h2>Analog</h2>
+            <h1>146.52</h1>
+            <p>National FM Calling</p>
+          </li>
+
+          <li>
+            <h2>D-Star</h2>
+            <h1>145.67</h1>
+            <p>Voice Calling</p>
+          </li>
+
+          <li>
+            <h2>Analog</h2>
+            <h1>446.00</h1>
+            <p>National FM Calling</p>
+          </li>
+
+          <li>
+            <h2>Analog</h2>
+            <h1>146.55</h1>
+            <p>Columbus Area FM Simplex</p>
+            <p>Note:
+              <ul>
+                <li>Use this for local nets in case of 146.880 and 146.745 repeater failures.</li>
+              </ul>
+            </p>
+          </li>
+
+          <li>
+            <h2>Analog</h2>
+            <h1>446.025 DCS:703N</h1>
+            <p>CARC Simplex</p>
+            <p>Note:
+              <ul>
+                <li>Great for HTs at Field Day and travel to hamfests.</li>
+              </ul>
+            </p>
+          </li>
+
+        </ul>
+
+      </div> <!-- end of panel-body -->
+    </div>
+
         <!-- Start table of Repeater/Programming info -->
-        
-        <table align="center" bgcolor="#D9DFAA" border="1" cellpadding="2" cellspacing="2" class="table" frame="box" rules="all" width="98%">
-        
-          <tr>
-            <td align="center" colspan="1"><b><font color="navy" face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="+1"><i>Radio Programming Info</i></font></b></td>
-            
-          </tr>
-          
-          <tr>
-          
-            <td>
-            <br>
-            Frequencies shown above for repeaters are the repeater's transmit frequency and should be programmed into your rig as the rigs' receive frequency. This is the frequency that most radios or programs ask for first. The offset shown (-) or (+) indicates whether your rig should transmit on a lower or higher frequency than it receives that repeater on.  Some radios ask for the specific transmit frequency, others ask for the offset and amount, some will default to the standard. Some repeaters are non-standard and the specific offset is shown.<br>
-            <br>
-            Modern radios are often easier to program, especially for repeaters, when linked to a computer. These files are offered as a starting point if you are using the free <a href="http://chirp.danplanet.com/projects/chirp/wiki/Home">Chirp software</a> or the commercially available <a href="http://www.rtsystemsinc.com/">RTSystems software</a>.<br>
-            <br>
-            In each case, you usually have to connect your radio to the computer using the correct cable, launch the software program, download the existing contents of your radio (even if it's brand new), import or copy/paste the data from these files and then upload the updated file to your radio. Trying to upload these files directly to your radio will not work. Each radio model has differing options for screen display, power levels, scanning options, memory locations and firmware versions, so it is not possible to offer a complete, turnkey file that will work for all radios. Each user also has different criteria for how and where they will use their radio.<br>
-            <br>
-            The files include most of the 2M and 70CM analog-capable repeaters above. They were made with a Wouxon KG-UV3D handheld, but the data should be able to be imported into any radio supported by the software.<br>
-            <br>
-            For CHIRP, use this file: <a href="W4CVY_Default_Repeater_List_KGUV123.chirp">W4CVY_Default_Repeater_List_KGUV123.chirp</a><br>
-            For RTSystems software, use this file:<a href="W4CVY_Default_Repeater_List_KGUV123.csv">W4CVY_Default_Repeater_List_KGUV123.csv</a><br>
-            <br>
-            Send comments on these files to K4BLL (address above.)<br> <br>
-            </td>
-            
-          </tr>
-          
-        </table>
-        
-        <br>
-        
-        
-        <!-- Start table of SKYWARN Info & Disclaimer -->
-        
-        <table align="center" bgcolor="#D9DFAA" border="1" cellpadding="2" cellspacing="2" class="table" frame="box" rules="all" width="98%">
-          
-          <tr>
-            
-            <td align="center" colspan="1"><b><font color="navy" face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="+1"><i>Weather Information</i></font></b></td>
-          </tr>
-          
-          <tr>
-            <td><br>
-            <font color="red">** WARNING:</font> While ham radio repeaters, linked weather radios and SkyWarn nets may be a supplemental source of weather information, they should not be your primary or only source. For the safety of you and yours, please monitor multiple sources including local broadcast media (TV and/or radio), cell phone apps, warning sirens and NOAA weather radio directly. All ham radio equipment and transmissions are offered and maintained by amateurs as a hobby and may not be available, timely or complete.  The intent and mission of Skywarn & severe weather nets is to relay "ground-truth" or real-time observations from the public to the National Weather Service or other public safety agencies to assist them during severe weather. We do not encourage storm-chasing. Seek cover or take appropriate or actions to assure your safety first. <br>
-            <br></td>
-          
-          </tr>
-          
-        </table>
-        
+
+      <div class="panel panel-default">
+        <div class="panel-heading"><h2>Radio Programming Info</h2></div>
+        <div class="panel-body">
+          <p>Frequencies shown above for repeaters are the repeater's transmit frequency and should be programmed
+            into your rig as the rig's receive frequency. This is the frequency that most radios or programs ask for first.
+            The offset shown (-) or (+) indicates whether your rig should transmit on a lower or higher frequency
+            than it receives that repeater on.
+            Some radios ask for the specific transmit frequency, others ask for the offset and amount, and some will
+            default to the standard for the selected band.
+            Some repeaters are non-standard and the specific offset is shown.
+          </p>
+
+          <p> Modern radios are often easier to program, especially for repeaters, when linked to a computer. These files are offered as a starting point if you are using the free <a href="http://chirp.danplanet.com/projects/chirp/wiki/Home">Chirp software</a> or the commercially available <a href="http://www.rtsystemsinc.com/">RTSystems software</a>.</p>
+
+          <p>In each case, you usually have to connect your radio to the computer using the correct cable, launch the software program, download the existing contents of your radio (even if it's brand new), import or copy/paste the data from these files and then upload the updated file to your radio. Trying to upload these files directly to your radio will not work. Each radio model has differing options for screen display, power levels, scanning options, memory locations and firmware versions, so it is not possible to offer a complete, turnkey file that will work for all radios. Each user also has different criteria for how and where they will use their radio.</p>
+
+          <p>The files include most of the 2M and 70CM analog-capable repeaters above. They were made with a Wouxon KG-UV3D handheld, but the data should be able to be imported into any radio supported by the software.</p>
+
+          <p>For CHIRP, use this file: <a href="files\W4CVY_Default_Repeater_List_KGUV123.chirp">W4CVY_Default_Repeater_List_KGUV123.chirp</a></p>
+          <p>For RTSystems software, use this file:<a href="files\W4CVY_Default_Repeater_List_KGUV123.csv">W4CVY_Default_Repeater_List_KGUV123.csv</a></p>
+
+          <p>Send comments on these files to K4BLL (address above).</p>
+        </div>
+      </div>
+
+      <!-- Start table of SKYWARN Info & Disclaimer -->
+
+      <div class="panel panel-default">
+        <div class="panel-heading"><h2>Weather Information</h2></div>
+        <div class="panel-body">
+          <p>
+            <span class="footnote">** WARNING:</span>
+            While ham radio repeaters, linked weather radios, and SkyWarn nets may be a supplemental source of weather
+            information, they should not be your primary or only source.
+            For the safety of you and yours, please monitor multiple sources including local broadcast media (TV and/or radio), cell phone apps, warning sirens and NOAA weather radio directly.
+            All ham radio equipment and transmissions are offered and maintained by amateurs as a hobby and may not be available, timely or complete.
+            The intent and mission of Skywarn &amp; severe weather nets is to relay "ground-truth" or real-time observations from the public to the National Weather Service or other public safety agencies to assist them during severe weather.
+            We do not encourage storm-chasing.
+            Seek cover or take appropriate or actions to assure your safety first.
+          </p>
+        </div>
       </div>
     </div>
-    
+
     <div id="footerDiv"></div>
   </div>
 
