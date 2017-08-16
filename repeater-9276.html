@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>CARC - Columbus Amateur Radio Club, Columbus, GA</title>
+  <link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="default.css" rel="stylesheet" type="text/css">
+  <!-- Begin Bootstrap includes -->
+  <link href="resources/css/bootstrap.min.css" rel="stylesheet" type="text/css"><!--End Bootstrap includes -->
+
+  <!-- Begin boostrap dependancies -->
+  <script src="resources/js/jquery-3.2.1.min.js"> </script>
+  <script src="resources/js/bootstrap.min.js"> </script><!-- End boostrap dependancies -->
+
+  <!-- This method will load the header, navbar and footer html from their respective files -->
+  <script>
+     $(document).ready(function(){
+             $('#headerDiv').load('header.html');
+             $('#navBarDiv').load('navbar.html');
+             $('#footerDiv').load('footer.html');
+     });
+  </script>
+  <style type="text/css">
+    div.container>img.map { margin:auto; }
+    .panel-body>p { text-align:left; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div id="headerDiv"></div>
+    <div id="navBarDiv"></div>
+  </div>
+
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h1>927.600 (-) Repeater</h1>
+      </div>
+
+      <div class="panel-body">
+        <h2>Predicted HT (handy-talky or handheld radio) Coverage Map</h2>
+        <ul>
+          <li>Pink: Excellent coverage</li>
+          <li>Dark Blue: Good coverage</li>
+          <li>Light Blue: Poor coverage</li>
+          <li>Other: No coverage</li>
+        </ul>
+
+      </div> <!-- end of panel-body -->
+    </div>
+
+    <img class="map" src="repeater_9276_coverage_map.jpeg" alt="927.6 coverage map"/>
+
+    <div id="footerDiv"></div>
+  </div>
+
+  </body>
+
+</html>
