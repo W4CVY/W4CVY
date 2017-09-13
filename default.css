@@ -105,3 +105,4 @@ a:hover { text-decoration: underline;
 
 .net { border:1px solid lightgray; margin: 10px; }
 .net>h2>a { font-size:100%; color:black; font-family:Arial; font-weight:bold; }
+em { font-weight:bold; }
