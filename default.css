@@ -109,3 +109,6 @@ a:hover { text-decoration: underline;
 em { font-weight:bold; font-style:normal; }
 
 .arrl_broadcast { display:none; }
+ul#upcoming_events { list-style-type:none; }
+ul#upcoming_events li { margin-top:20px; margin-bottom:20px; border:1px solid #eeeeee; }
+.hide { display:none; }
